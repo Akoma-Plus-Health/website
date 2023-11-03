@@ -2,7 +2,8 @@
 </script>
 
 <template>
-    <div class="bg-gradient-to-r from-red-900 to-red-900 text-white py-28">
+    <!-- <div class="bg-gradient-to-r from-red-900 to-red-600 text-white py-28"> -->
+    <div class="bg-red-900 text-white py-28">
         <div class="max-width">
             <div class="flex gap-10 justify-around flex-wrap">
                 <div class="f basis-[400px]">
@@ -47,10 +48,6 @@
                     </p>
                     <p class="my-3 font-light  hover:text-secondary"><router-link
                             :to="{ name: 'AboutUs' }">About Us</router-link></p>
-                    <!-- <p class="my-3 font-light  hover:text-secondary"><router-link
-                            :to="{ path: '/', hash: '#faq' }">FAQ</router-link></p>
-                    <p class="my-3 font-light  hover:text-secondary"><router-link
-                            :to="{ path: '/', hash: '#testimonial' }">Testimonials</router-link></p> -->
                     <p class="my-3 font-light  hover:text-secondary"><router-link :to="{ name: 'ContactUs' }">Contact
                             Us</router-link></p>
                 </div>
@@ -59,7 +56,7 @@
     </div>
 </template>
 <style>
-.bg-custom-gradient {
+/* .bg-custom-gradient {
     background: linear-gradient(80deg, #470808 40%, #D30000 70%);
-  }
+  } */
 </style>

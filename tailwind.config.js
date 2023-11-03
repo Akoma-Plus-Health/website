@@ -14,16 +14,16 @@ module.exports = {
     extend: {
       colors: {
         'primary-light': '#571710', //Primary litt color
-        primary: '#8B000F', //For hovers and basically complementing the primary color
+        primary: '#850000', //For hovers and basically complementing the primary color
         grey: '#F5F5F5',
         secondary: '#FFB845'
       },
-      // fontFamily: {
-      //   heading: ['Yeseva One'], //this is for the headings
-      //   body: ['Montserrat'], // the main body text font. Applied to App.vue
-      //   poppins: ['Poppins'], // occassional usage
-      //   inter: ['Inter'] //Occassional usage
-      // },
+      fontFamily: {
+        heading: ['Open Sans'], //this is for the headings
+        body: ['Open Sans'] // the main body text font. Applied to App.vue
+        // poppins: ['Poppins'], // occassional usage
+        // inter: ['Inter'] //Occassional usage
+      },
       screens: {
         xs: '480px',
         sm: '600px'
