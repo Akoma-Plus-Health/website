@@ -1,18 +1,19 @@
-<!-- <script setup>
-</script> -->
+<script setup>
+import HeaderBanner from '../components/Home/HeaderBanner.vue';
+import OurServices from '../components/Home/OurServices.vue';
+import WHOinfo from '../components/Home/WHOinfo.vue'
+import Articles from '../components/Home/Articles.vue'
+</script>
 
 <template>
   <main class="home">
-    <p>You are on the homepage</p>
+    <HeaderBanner />
+
+    <OurServices />
+    <WHOinfo />
+    <Articles />
+
   </main>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<style></style>
