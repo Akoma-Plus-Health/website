@@ -6,7 +6,7 @@ import Pageheader from '../components/layouts/pageheader.vue';
 <template>
     <Pageheader />
     <section>
-<div class="max-w-screen-xl w-full mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900">
+<div class=" container w-full mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900">
   <div class="flex flex-col justify-between">
     <div>
       <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Contact <span class="text-red-800">Us</span></h2>
