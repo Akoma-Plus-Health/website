@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class="container mx-auto   mb-[150px]">
+    <div class="mb-[150px]">
         <div class="w-[482px]  border-2 rounded-lg p-4	">
             <div class=" p-7">
                 <p class="font-bold text-4xl mt-[15px]">

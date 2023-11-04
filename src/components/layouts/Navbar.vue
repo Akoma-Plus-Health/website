@@ -1,4 +1,5 @@
 <script setup>
+import Home from "../../views/Home.vue";
 import MobileNav from "./MobileNav.vue";
 import { ref, watch, onUnmounted } from 'vue';
 
@@ -40,10 +41,8 @@ onUnmounted(() => {
       <div>
         <div class="links md:inline hidden">
           <router-link :to="{ name: 'Home' }" class="mx-4">Home</router-link>
-          <router-link :to="{ name: 'Services' }" class="mx-4">Services</router-link>
+          <router-link :to="{ path: 'Home/#Services' }" class="mx-4">Services</router-link>
           <router-link :to="{ name: 'AboutUs' }" class="mx-4">About Us</router-link>
-          <!-- <router-link :to="{ path: '/', hash: '#testimonial' }" class="on-homepage mx-4">Testimonials</router-link>
-                                  <router-link :to="{ path: '/', hash: '#faq' }" class="on-homepage mx-4">FAQ</router-link> -->
           <router-link :to="{ name: 'ContactUs' }" class="mx-4">Contact Us</router-link>
         </div>
         <!-- <div class="inline ml-10">
