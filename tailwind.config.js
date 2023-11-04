@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js}'],
+  content: [
+    './index.html',
+    './src/**/*.{vue,js}',
+    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}',
+    'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
+  ],
   theme: {
     container: {
       padding: {
@@ -31,5 +36,5 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/forms', 'flowbite/plugin')]
 }
