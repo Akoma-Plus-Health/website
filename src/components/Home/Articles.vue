@@ -3,13 +3,17 @@ import ArticleCard from './ArticleCard.vue';
 </script>
 
 <template>
-    <div class="container mx-auto">
-        <h4 class="font-bold text-[48px] text-center pt-20 pb-12 mt-[100px]">Our Health Articles</h4>
+    <section>
+        <div class="mx-auto container py-32">
+            <div class="py-10">
+                <h2 class="font-bold text-6xl text-center py-5">Our Health Articles</h2>
+            </div>
 
-        <div>
-            <ArticleCard />
+            <div class="flex gap-6 mx-auto">
+                <ArticleCard />
+            </div>
         </div>
-    </div>
+    </section>
 </template>
 
 

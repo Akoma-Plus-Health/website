@@ -13,7 +13,7 @@
                     Do you truly understand your blood pressure? Explore <span class="text-red-500 font-bold">AKOMA+</span>
                     for
                     insights, tools, and <br>
-                    care that put your heart health first."
+                    care that put your heart health first.
 
                 </p>
             </div>
