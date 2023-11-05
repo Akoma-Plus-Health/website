@@ -12,7 +12,7 @@ import { FwbButton } from 'flowbite-vue'
     <HeaderBanner />
     <OurServices />
     <WHOinfo />
-    <Articles class="mx-20 my-10" />
+    <Articles class="mx-auto sm:mx-20 my-10" />
     <section class="chatcta">
       <div class="py-28 bg-gredient-r flex flex-col">
         <div class="flex py-6 sm:py-8 lg:py-12 ">
@@ -21,10 +21,12 @@ import { FwbButton } from 'flowbite-vue'
 
             <p class="mx-auto w-[450px] text-center text-slate-100 md:text-lg">To find out more about our services, have a
               conversation with our knowledgeable staff.</p>
-            <fwb-button
+            <button
+              class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
+            <!-- <fwb-button
               class="mx-auto  dark:hover:bg-red-950 hover:text-white dark:bg-white mt-8 dark:text-red-900 font-bold">
               Lets Have A Chat
-            </fwb-button>
+            </fwb-button> -->
             <!-- <a href="#" class="mx-auto">
             <button
               class="mx-auto hover:bg-red-950 hover:text-white w-36 h-10 rounded-lg bg-white mt-8 font-bold text-red-900">
