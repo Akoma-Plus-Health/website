@@ -18,13 +18,8 @@ module.exports = {
     },
     extend: {
       colors: {
-<<<<<<< HEAD
-        'primary-light': '#571710', //Primary litt color
-        primary: '#850000', //For hovers and basically complementing the primary color
-=======
         'primary-light': '#C20000', //Primary litt color
         primary: '#480000', //For hovers and basically complementing the primary color
->>>>>>> dev
         grey: '#F5F5F5',
         secondary: '#FFB845'
       },
