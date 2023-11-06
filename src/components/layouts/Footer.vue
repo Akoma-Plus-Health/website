@@ -1,16 +1,20 @@
-<script setup>
+<!-- BEGIN - get YEAR to automatically add in footer -->
+<script>
+document.getElementById("ccright").innerHTML = "Copyright © " + new Date().getFullYear() + " mydomainname.com - All Rights Reserved";
 </script>
+<!-- END - get YEAR to automatically add in footer -->
 
 <template>
     <!-- <div class="bg-gradient-to-r from-red-900 to-red-600 text-white py-28"> -->
-    <div class="bg-red-900 text-white py-28">
+    <div class="bg-[#F3F3F3] text-gray-500 py-28">
         <div class="max-width">
             <div class="flex gap-10 justify-around flex-wrap">
                 <div class="f basis-[400px]">
-                    <img src="@/assets/images/logo.svg" alt="litt" class="w-14 mb-2">
+                    <img src="@/assets/images/akomaplus-logo.png" alt="litt" class="w-14 mb-2">
                     <p class="mb-5">
-                        Embrace Agile Excellence: Amplify Your Skills and Empower Your Success with Our Cutting-Edge
-                        Agile Software Development Program!
+                        We're experts in preventing heart disease and improving
+                        global health through a digital platform that screens for
+                        risks and provides prevention strategies.
                     </p>
                     <p class="text-xl font-bold">Follow us</p>
                     <p class="my-2">Subscribe to our social media channels. Let's stay in touch.</p>
@@ -31,26 +35,27 @@
                             <img src="/assets/images/icon-images/twitter.svg" alt="twitter">
                         </a>
                     </div> -->
-
-
-                </div>
-                <div class="basis-[400px]">
-                    <h3 class="font-bold text-lg">Ghana Office</h3>
-                    <p class="my-3">Email: info@leanicontechnology.co​m</p>
-                    <p class="my-3">Call: 0576290000</p>
-                    <p class="my-3">Office Location: Vision House,</p>
-                    <p class="my-3">2nd floor, Block E117/17</p>
-                    <p class="my-3">Abavana Rd, Kotobabi</p>
                 </div>
                 <div class="basis-[300px]">
                     <h3 class="font-bold text-lg">Links</h3>
                     <p class="my-3 font-light  hover:text-secondary"><router-link :to="{ name: 'Home' }">Home</router-link>
                     </p>
-                    <p class="my-3 font-light  hover:text-secondary"><router-link
-                            :to="{ name: 'AboutUs' }">About Us</router-link></p>
+                    <p class="my-3 font-light  hover:text-secondary"><router-link :to="{ name: 'AboutUs' }">About
+                            Us</router-link></p>
                     <p class="my-3 font-light  hover:text-secondary"><router-link :to="{ name: 'ContactUs' }">Contact
                             Us</router-link></p>
                 </div>
+                <div class="basis-[400px]">
+                    <h3 class="font-bold text-lg">Ghana Office</h3>
+                    <p class="my-3">Email: info@leanicontechnology.co​m</p>
+                    <p class="my-3">Call: 0576290000</p>
+                    <!-- <p class="my-3">Office Location: Vision House,</p>
+                    <p class="my-3">2nd floor, Block E117/17</p>
+                    <p class="my-3">Abavana Rd, Kotobabi</p> -->
+                </div>
+            </div>
+            <div class="mx-auto" id="ccright">
+                <p>&copy; 2023 <a href="https://akomaplushealth.com">Akoma Plus Health &amp; Wellness</a></p>
             </div>
         </div>
     </div>
