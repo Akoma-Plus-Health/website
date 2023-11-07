@@ -4,21 +4,20 @@ import Navbar from "./components/layouts/Navbar.vue";
 import Footer from "./components/layouts/Footer.vue";
 
 useHead({
-  title: "This is the Akoma Website",
+  title: "Akoma+ Health & Wellness",
   meta: [
     { name: "description", content: "Akoma website description" },
     { property: "og:title", content: "Akoma - The best place to learn coding." },
     { property: "og:image", content: "/images/logo-social.png" },
     { property: "twitter:card", content: "summary_large_image" },
-    { property: "twitter:site", content: "@akomablog" },
-    { property: "twitter:creator", content: "@akomablog" },
-    { property: "twitter:url", content: "https://www.akoma.com/" },
+    { property: "twitter:url", content: "https://www.akomaplushealth.com/" },
     { property: "twitter:title", content: "Akoma - The best place to learn coding." },
     { property: "twitter:description", content: "Akoma website description" },
     { property: "twitter:image", content: "/images/logo-social.png" },
   ]
 })
 </script>
+
 
 <template>
   <div class="font-body  text-sm lg:text-base">
