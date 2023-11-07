@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary-light': '#C20000', //Primary litt color
+        primary: '#C20000',
         primary: '#480000', //For hovers and basically complementing the primary color
         grey: '#F5F5F5',
         secondary: '#FFB845'
