@@ -1,12 +1,12 @@
 <script setup>
-import ContactForm from '../components/Home/ContactForm.vue';
+import ContactForm from '../components/contact/ContactForm.vue';
 import Pageheader from '../components/layouts/pageheader.vue';
 
 
 </script>
 <template>
   <Pageheader />
-  <section>
+  <section class="bg-[#F8F8F8]">
     <div
       class=" container w-full mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900">
       <div class="flex flex-col justify-between">

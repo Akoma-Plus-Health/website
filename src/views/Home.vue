@@ -1,12 +1,11 @@
 <script setup>
-import HeaderBanner from '../components/Home/HeaderBanner.vue'
-import OurServices from '../components/Home/OurServices.vue'
-import WHOinfo from '../components/Home/WHOinfo.vue'
-import Articles from '../components/Home/Articles.vue'
-import Faqs from '../components/Home/Faqs.vue'
-// import { FwbButton } from 'flowbite-vue'
-import VideoSection from '../components/Home/VideoSection.vue'
-import Testimonials from '../components/Home/Testimonials.vue'
+import HeaderBanner from '../components/home/HeaderBanner.vue'
+import OurServices from '../components/home/OurServices.vue'
+import WHOinfo from '../components/home/WHOinfo.vue'
+import Articles from '../components/home/Articles.vue'
+import Faqs from '../components/home/Faqs.vue'
+import VideoSection from '../components/home/VideoSection.vue'
+import Testimonials from '../components/home/Testimonials.vue'
 </script>
 
 <template>
