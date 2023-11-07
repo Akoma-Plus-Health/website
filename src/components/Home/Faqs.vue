@@ -121,4 +121,5 @@ const faq = [
             </fwb-accordion-content>
         </fwb-accordion-panel>
     </fwb-accordion> -->
-<!-- question - end --></template>
+    <!-- question - end -->
+</template>

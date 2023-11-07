@@ -1,13 +1,17 @@
 <template>
-    <section class="h-96 w-screen bg-red-950">
-        <div class="relative container mx-auto px-4">
-        <h1 class="text-4xl font-bold mb-4">Title</h1>
-        <p class="text-xl mb-4">Subtitle</p>
-        <p class="text-base">Content...</p>
-       </div>
-       <!-- <div class="absolute bottom-0 right-0 bg-red-500 w-48 h-48"></div> -->
-    </section>
-    <section class="h-96 bg-orange-700">
+    <section class="bg-primary sm:py-8 lg:py-12 py-20">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <h2 class="mb-4 text-center text-2xl font-bold text-white md:mb-6 lg:text-3xl">Revolutionary way to build the
+                web</h2>
 
+            <p class="mx-auto max-w-screen-md text-center text-white md:text-lg">This is a section of some simple filler
+                text, also known as placeholder text. It shares some characteristics of a real written text but is random or
+                otherwise generated.</p>
+
+            <p
+                class="my-4 border border-red-900 py-2 mx-auto w-32 rounded-xl text-center bg-white font-semibold text-red-800 md:mb-3 lg:text-lg">
+                Introducing</p>
+
+        </div>
     </section>
 </template>
