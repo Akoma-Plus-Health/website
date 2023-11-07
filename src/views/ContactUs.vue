@@ -1,6 +1,6 @@
 <script setup>
 import ContactForm from '../components/contact/ContactForm.vue';
-import Pageheader from '../components/layouts/pageheader.vue';
+import Pageheader from '../components/layouts/PageHeader.vue';
 
 
 </script>
