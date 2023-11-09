@@ -1,26 +1,26 @@
 export const team = [
   {
     name: 'Dr. Martin Tibuakuu',
-    image: 'martin.png',
+    image: 'martin_epidermatologist.jpeg',
     title: 'Cardiologist & Epidemiologist',
     linkedin: ''
   },
   {
     name: 'Osei Boateng',
     image: 'osei.png',
-    title: 'MBA',
+    title: 'Healthcare Administrator',
     linkedin: ''
   },
   {
     name: 'Dr. Hamza Asumah',
     image: 'hamza.png',
-    title: 'General Surgeon',
+    title: 'General Surgeon & Business Strategist',
     linkedin: ''
   },
   {
     name: 'Dr Bennett Kweku Antwi ',
     image: 'bennett.png',
-    title: 'MD, MPH, MBA jsc',
+    title: 'Public Health Expert & Healthcare Administrator',
     linkedin: ''
   },
   {
@@ -32,7 +32,7 @@ export const team = [
   {
     name: 'Dr. Aubrey Mwinyogle ',
     image: 'aubrey.png',
-    title: 'Vascular Surgery Fellow',
+    title: 'Vascular Surgeon',
     linkedin: ''
   }
 ]

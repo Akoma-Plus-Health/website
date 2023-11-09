@@ -1,7 +1,6 @@
 <script setup>
 import Statistics from '../Statistics.vue';
 
-
 </script>
 <template>
     <header class="bg-[url('../../assets/images/akoma_doctors.png')] bg-cover bg-center h-[700px] relative mb-52">
@@ -35,6 +34,3 @@ import Statistics from '../Statistics.vue';
         </div>
     </header>
 </template>
-
-
-<style lang="scss" scoped></style>

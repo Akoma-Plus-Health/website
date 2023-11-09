@@ -5,7 +5,7 @@ defineProps(['name', 'title', 'image'])
 <template>
   <div class="w-[350px] box-shadow bg-white text-center p-5 py-10">
     <div class="rounded-full mx-auto w-[60%]">
-      <img :src="image" :alt="name" class="w-full">
+      <img :src="image" :alt="name" class="w-full rounded-full">
     </div>
 
     <p class="text-xl font-bold mt-4 mb-1">{{ name }}</p>
@@ -15,7 +15,6 @@ defineProps(['name', 'title', 'image'])
     </p>
   </div>
 </template>
-
 
 <style scoped>
 .box-shadow {

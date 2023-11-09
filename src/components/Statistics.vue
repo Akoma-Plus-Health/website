@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <div class="bg-[#C7C7C7] rounded-xl flex w-full py-5">
         <!-- stat 1 -->
@@ -38,4 +34,4 @@
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped></style>
