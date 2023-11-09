@@ -11,9 +11,8 @@
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.0.17",
+    "@heroicons/vue": "^2.0.18",
     "@unhead/vue": "^1.8.2",
-    "flowbite": "^2.0.0",
-    "flowbite-vue": "^0.1.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
