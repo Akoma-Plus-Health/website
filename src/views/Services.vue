@@ -1,7 +1,7 @@
 <script setup>
 import Pageheader from '../components/services/ServiceHeader.vue'
 import PackageCard from '../components/ui/PackageCard.vue'
-import GetInTouch from '../components/ui/CTA.vue'
+import GetInTouch from '../components/ui/GetInTouch.vue'
 
 import { healthPackage } from '../utils/data/services';
 </script>
@@ -101,7 +101,7 @@ import { healthPackage } from '../utils/data/services';
                 </div>
             </div>
         </section>
-        <section class="py-60 md:py-36 mx-auto bg-red-900">
+        <section class="my-44">
             <GetInTouch />
         </section>
     </main>
