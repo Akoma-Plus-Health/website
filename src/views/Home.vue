@@ -1,6 +1,7 @@
 <script setup>
 // import { ref, onMounted, onBeforeUnmount } from 'vue'
 import HeaderBanner from '../components/home/HeaderBanner.vue'
+import DidYouKnowSlider from '../components/home/DidYouKnowSlider.vue'
 import ServiceCard from '../components/services/ServiceCard.vue'
 // import FeedbackSlider from '../components/Slider.vue'
 import { serviceList } from '../utils/data/services'
@@ -17,28 +18,17 @@ function getImageUrl(name, ext) {
 <template>
     <main>
         <HeaderBanner />
-        <!-- <section class=" h-[250px] bg-cover w-full bg-[url('@/assets/images/banner.jpg')] py-96 mx-auto">
-            <div class="container flex flex-col items-center justify-start w-full h-screen mx-auto px-4 sm">
-                <p class="text-6xl font-bold text-white">Some Text</p>
-            </div>
-        </section> -->
-        <section class="container my-10 md:my-20 mx-auto">
+
+        <!-- did you know? -->
+        <section class="container mx-auto my-32">
+
+            <!-- did you know text -->
             <div class="my-20 max-w-3xl m-auto text-center">
-                <h1 class="text-3xl md:text-4xl text-red-800 font-black">Did you know?</h1>
-                <p class="my-5 text-2xl leading-7">Some facts you should know about your health and why you need to jump on
-                    this opportunity to a better heart</p>
+                <h2 class="text-3xl md:text-4xl font-bold">Did you know?</h2>
             </div>
-            <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row">
-                <div class="flex flex-col my-auto lg:w-1/2 gap-4">
-                    <p class="text-5xl"> According to the WHO Heart disease takes an estimated 17.9 million lives worldwide
-                        each year.
-                    </p>
-                </div>
-                <div class="lg:w-1/2">
-                    <img class="box-shadow mx-auto rounded-lg"
-                        src="@/assets/images/services/akomaplus_workplace_wellness.png" alt="Akoma+ Workplace Wellness">
-                </div>
-            </div>
+
+            <!-- did you know slider -->
+            <DidYouKnowSlider />
         </section>
         <!-- Services -->
         <section class="container py-10 md:my-20 mx-auto">
