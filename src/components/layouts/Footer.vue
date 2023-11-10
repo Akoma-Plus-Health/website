@@ -120,7 +120,7 @@
                 <!-- nav - end -->
             </div>
             <div class="py-auto my-4 h-20">
-                <div class="float-left text-sm text-gray-600 lg:-mt-2">
+                <div class="md:float-left text-sm text-gray-600 lg:-mt-2">
                     <p>Download the app by clicking on the link below</p>
                     <div class="inline-flex gap-2 pt-5 w-[350px]">
                         <img src="@/assets/images/akoma_app_is_on_apple_appstore.webp"
@@ -131,7 +131,7 @@
                             class="inline-flex items-center gap-2 w-2/5 text-xl font-bold text-black md:text-2xl" />
                     </div>
                 </div>
-                <div class="float-right text-sm text-gray-600">
+                <div class="md:float-right text-sm text-gray-600">
                     <router-link :to="{ name: 'Home' }"
                         class="transition duration-100 hover:text-red-500 active:text-red-600">Terms and
                         Conditions</router-link> | <a href="#"
