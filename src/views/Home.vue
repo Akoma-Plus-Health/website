@@ -3,11 +3,12 @@
 import HeaderBanner from '../components/home/HeaderBanner.vue'
 import DidYouKnowSlider from '../components/home/DidYouKnowSlider.vue'
 import ServiceCard from '../components/services/ServiceCard.vue'
-import GetInTouch from '../components/ui/CTA.vue'
+import GetInTouch from '../components/ui/GetInTouch.vue'
 // import FeedbackSlider from '../components/Slider.vue'
 import { serviceList } from '../utils/data/services'
 import FAQ from '../components/Home/Faqs.vue'
 import { Faqs } from '../utils/data/faqs'
+import MobileAppComingSoonSlider from '../components/Home/MobileAppComingSoonSlider.vue'
 // import { testimonyList } from '../utils/data/testimonies'
 
 function getImageUrl(name, ext) {
@@ -34,78 +35,40 @@ function getImageUrl(name, ext) {
 
 
         <!-- Services -->
-        <section class="container py-10 md:my-20 mx-auto">
-            <div class="my-20 max-w-3xl m-auto sm:text-center">
-                <h1 class="text-3xl md:text-4xl text-red-800 font-black">Our Services</h1>
-                <p class="my-5 text-lg">Our services are tailored to empower you on your journey to a better
-                    health.
-                </p>
-            </div>
-            <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
-                <template v-for="(item, index) in    serviceList" :key="index">
-                    <ServiceCard :image="getImageUrl(item.icon)" :title="item.name" :description="item.desc" :url="item.url"
-                        class="sm:w-[50%] lg:w-[400px]" />
-                </template>
-            </div>
-        </section>
-        <section class="py-auto mx-auto drop-shadow-20">
-            <div class="mx-auto">
-                <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row">
-                    <div class="flex flex-col container my-auto lg:w-1/2 gap-4">
-                        <h1 class="text-red-950 text-4xl sm:text-6xl font-bold">Akoma+ Mobile App, Coming Soon</h1>
-                        <p class="text-lg"> Your heart's health is in your hands, and Akoma+ is here to help. We're
-                            excited
-                            to introduce our upcoming mobile app, designed
-                            for your convenience and well-being.
-                            <!-- With Akoma+, you'll have
-                            the power to monitor your heart health at your fingertips, no
-                            matter where you are. -->
-                        </p>
-                        <div class="float-left text-sm text-gray-600 lg:mt-36">
-                            <p class="text-red-950 text-4xl font-semibold">Coming Soon</p>
-                            <div class="inline-flex gap-8 pt-5 w-[470px]">
-                                <img src="@/assets/images/akoma_app_is_on_apple_appstore.webp"
-                                    alt="akomaplus_app_is_on_apple_appstore"
-                                    class="inline-flex items-center gap-2 w-2/5 text-xl font-bold text-black md:text-2xl" />
-                                <img src="@/assets/images/akoma_app_is_on_google_playstore.webp"
-                                    alt="akomaplus_app_is_on_apple_playstore"
-                                    class="inline-flex items-center gap-2 w-2/5 text-xl font-bold text-black md:text-2xl" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <img class="box-shadow mx-auto rounded-lg" src="@/assets/images/akoma_mobile_app.png"
-                            alt="Akoma+ Mobile App Coming Soon">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services -->
-        <!-- <section class="container my-10 md:my-20 mx-auto">
-            <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
-                <template v-for="(item, index) in    serviceList" :key="index">
-                    <ServiceCard :image="getImageUrl(item.icon)" :title="item.name" :description="item.desc" :url="item.url"
-                        class="sm:w-[50%] lg:w-[400px]" />
-                </template>
-            </div>
-        </section> -->
-        <!-- <section class="container py-20 md:my-20 mx-auto">
-            <div class="my-20 max-w-3xl m-auto text-center">
-                <h1 class="text-3xl md:text-4xl text-red-800 font-black">Our Client Testimonial</h1>
-                <p class="my-5 text-lg leading-7">Feedback from our patients and subscribers who have succesful reached a
-                    tangible milestoine on their journey to a better health </p>
-            </div>
+        <section class=" my-32 pb-32 pt-24  bg-[url('@/assets/images/wave.svg')] bg-center bg-cover">
 
-            -- faqs --
-            <div class=" flex flex-col gap-4 max-w-6xl mx-auto">
-                <template>
-                    <FeedbackSlider :testimonials="testimonials" />
-                </template>
+            <div class="container mx-auto">
+                <!-- Our services -->
+                <div class="mb-14 max-w-3xl m-auto sm:text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our Services</h2>
+                </div>
+
+                <!-- Services cards -->
+                <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
+                    <template v-for="(item, index) in    serviceList" :key="index">
+                        <ServiceCard :image="getImageUrl(item.icon)" :title="item.name" :description="item.desc"
+                            :url="item.url" class="sm:w-[50%] lg:w-[400px]" />
+                    </template>
+                </div>
+
             </div>
-        </section> -->
-        <section class="container py-20 md:my-20 mx-auto">
-            <div class="my-20 max-w-3xl m-auto sm:text-center">
-                <h1 class="text-3xl md:text-4xl text-red-800 font-black">Frequently Asked Questions</h1>
+        </section>
+
+
+        <!-- Akoma+ mobile app coming sooon -->
+        <section class="py-auto mx-auto drop-shadow-20">
+            <MobileAppComingSoonSlider />
+        </section>
+
+        <!-- Get in touch -->
+        <section class="my-32">
+            <GetInTouch />
+        </section>
+
+        <!-- Frequently asked questions -->
+        <section class="container my-48 mx-auto">
+            <div class="max-w-3xl m-auto sm:text-center">
+                <h1 class="text-3xl md:text-4xl text-[#590000] font-bold">Frequently Asked Questions</h1>
                 <p class="my-5 text-lg leading-7">Our FAQ area is the best place to look to find answers to your questions.
                     Our
                     community and support team constantly updates the questions and answers.
@@ -113,14 +76,13 @@ function getImageUrl(name, ext) {
             </div>
 
             <!-- faqs -->
-            <div class=" flex flex-col gap-4 max-w-6xl mx-auto">
+            <div class=" flex flex-col gap-4 max-w-6xl mx-auto mt-14">
                 <template v-for="(faq, index) in Faqs" :key="index">
                     <FAQ :question="faq.question" :answer="faq.answer" />
                 </template>
             </div>
         </section>
-        <section class="py-60 md:py-36 mx-auto bg-red-900">
-            <GetInTouch />
-        </section>
+
+
     </main>
 </template>
