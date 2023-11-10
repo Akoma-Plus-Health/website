@@ -21,7 +21,7 @@ useHead({
 
 <template>
   <div class="font-body  text-sm lg:text-base">
-    <Navbar />
+    <Navbar :key="$route.path" />
     <router-view></router-view>
     <Footer />
   </div>
