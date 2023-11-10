@@ -32,7 +32,7 @@ onUnmounted(() => {
     <MobileNav v-if="toggle" />
   </Transition>
 
-  <nav class="sticky top-0 bg-white z-20 border-b p-5">
+  <nav class="sticky top-0 bg-white z-20 border-b py-5">
     <div class="nav flex  justify-between items-center container mx-auto ">
       <div class="logo w-24">
         <router-link :to="{ name: 'Home' }">

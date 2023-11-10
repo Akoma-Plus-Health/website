@@ -12,7 +12,7 @@ import Statistics from '../Statistics.vue';
 
             <!-- header Content -->
             <div class="relative text-white max-w-4xl text-center mx-auto top-[380px]">
-                <h2 class="font-bold text-5xl mb-3">About Us</h2>
+                <h2 class="font-bold big-heading mb-3">About Us</h2>
 
                 <!-- content -->
                 <p class="">

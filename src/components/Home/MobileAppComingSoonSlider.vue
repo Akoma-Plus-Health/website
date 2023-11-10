@@ -3,17 +3,17 @@
 </script>
 
 <template>
-    <div class="flex gap-2">
-        <div class="w-1/2">
+    <div class="flex gap-2 md:flex-row flex-col">
+        <div class="md:w-1/2">
 
             <!-- The plenty classes is for responsiveness and it's based on the container class -->
             <div
-                class="md:w-[384px] lg:w-[512px] xl:w-[640px] 2xl:w-[768px] sm:pl-4 lg:pl-8 xl:pl-16 2xl:pl-20 flex flex-col justify-between ml-auto h-full md:py-20 lg:pb-40 ">
+                class="px-4 w-full sm:w-[600px] md:w-[384px] lg:w-[512px] xl:w-[640px] 2xl:w-[768px] md:pl-4 md:pr-0 lg:pl-8 xl:pl-16 2xl:pl-20 mx-auto md:mx-0 flex flex-col justify-between md:ml-auto h-full md:py-10 lg:py-20  xl:pb-40 ">
 
                 <!-- content -->
                 <div class="">
                     <!-- title -->
-                    <h2 class="text-3xl md:text-4xl font-bold w-96 text-[#590000] mb-8">Akoma+ Mobile App Coming Soon</h2>
+                    <h2 class="sub-heading font-bold w-96 text-[#590000] mb-8">Akoma+ Mobile App Coming Soon</h2>
 
                     <!-- content -->
                     <p class="">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <!-- images -->
-        <div class="w-[50%]">
+        <div class="md:w-[50%]">
             <img class="box-shadow mx-auto rounded-lg" src="@/assets/images/akoma_mobile_app.png"
                 alt="Akoma+ Mobile App Coming Soon">
         </div>
