@@ -46,8 +46,8 @@ onUnmounted(() => {
           <router-link :to="{ name: 'ContactUs' }" class="mx-4">Contact Us</router-link>
         </div>
         <!-- <div class="inline ml-10">
-                                  <use-icon icon="search" class="text-xl md:text-base"></use-icon>
-                                </div> -->
+          <use-icon icon="search" class="text-xl md:text-base"></use-icon>
+        </div> -->
         <div class="ml-3 md:hidden inline">
           <use-icon icon="bars" class=" text-2xl" @click="toggleMobileNav"></use-icon>
         </div>
