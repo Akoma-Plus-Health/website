@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 import TestimonialImg01 from '../assets/images/testimonial-01.jpg'
 import TestimonialImg02 from '../assets/images/testimonial-02.jpg'
-import TestimonialImg03 from '../assets/imagestestimonial-03.jpg'
+import TestimonialImg03 from '../assets/images/testimonial-03.jpg'
 
 const active = ref<number>(0)
 const autorotate = ref<boolean>(true)
