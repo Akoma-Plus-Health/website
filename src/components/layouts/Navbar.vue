@@ -24,12 +24,12 @@ onUnmounted(() => {
   <Transition name="fade">
     <div class="overlay fixed z-30 bg-black/10 top-0 left-0 right-0 bottom-0 transition-opacity" v-if="toggle"
       @click="toggleMobileNav">
-  </div>
+    </div>
   </Transition>
 
   <Transition name="mobile">
-  <MobileNav v-if="toggle" />
-</Transition>
+    <MobileNav v-if="toggle" />
+  </Transition>
 
   <div class="sticky top-0 bg-white z-20 border-b p-5">
     <div class="nav flex p-2 justify-between items-center max-width ">
@@ -41,13 +41,13 @@ onUnmounted(() => {
       <div>
         <div class="links md:inline hidden">
           <router-link :to="{ name: 'Home' }" class="mx-4">Home</router-link>
-          <router-link :to="{ path: 'Home/#Services' }" class="mx-4">Services</router-link>
+          <router-link :to="{ name: 'Services' }" class="mx-4">Services</router-link>
           <router-link :to="{ name: 'AboutUs' }" class="mx-4">About Us</router-link>
           <router-link :to="{ name: 'ContactUs' }" class="mx-4">Contact Us</router-link>
         </div>
         <!-- <div class="inline ml-10">
-                                  <use-icon icon="search" class="text-xl md:text-base"></use-icon>
-                                </div> -->
+          <use-icon icon="search" class="text-xl md:text-base"></use-icon>
+        </div> -->
         <div class="ml-3 md:hidden inline">
           <use-icon icon="bars" class=" text-2xl" @click="toggleMobileNav"></use-icon>
         </div>
@@ -69,7 +69,7 @@ onUnmounted(() => {
 
 .on-homepage.active-link {
   color: #c20000;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .fade-enter-active,

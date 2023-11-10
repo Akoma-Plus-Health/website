@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#F3F3F3] pt-4 sm:pt-10 lg:pt-12">
+    <div class="bg-[#F3F3F3] pt-4 sm:px-10 lg:pt-12">
         <footer class="mx-auto max-w-screen-2xl px-12 md:px-8">
             <div class="grid grid-cols-2 gap-8 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
                 <div class="col-span-full lg:col-span-2">
@@ -10,9 +10,9 @@
                     </div>
                     <!-- logo - end -->
 
-                    <p class="mb-4 text-gray-500 sm:pr-8">We're experts in preventing heart disease and improving
-                        global health through a digital platform that screens for
-                        risks and provides prevention strategies. </p>
+                    <p class="mb-4 text-gray-800 sm:pr-8 font-bold">Preventing cardiac deaths through early
+                        screening.
+                    </p>
                 </div>
 
                 <!-- nav - start -->
@@ -120,7 +120,7 @@
                 <!-- nav - end -->
             </div>
             <div class="py-auto my-4 h-20">
-                <div class="float-left text-sm text-gray-600 lg:-mt-2">
+                <div class="md:float-left text-sm text-gray-600 lg:-mt-2">
                     <p>Download the app by clicking on the link below</p>
                     <div class="inline-flex gap-2 pt-5 w-[350px]">
                         <img src="@/assets/images/akoma_app_is_on_apple_appstore.webp"
@@ -131,7 +131,7 @@
                             class="inline-flex items-center gap-2 w-2/5 text-xl font-bold text-black md:text-2xl" />
                     </div>
                 </div>
-                <div class="float-right text-sm text-gray-600">
+                <div class="md:float-right text-sm text-gray-600">
                     <router-link :to="{ name: 'Home' }"
                         class="transition duration-100 hover:text-red-500 active:text-red-600">Terms and
                         Conditions</router-link> | <a href="#"

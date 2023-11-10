@@ -1,7 +1,7 @@
 <script setup>
 import AboutHeader from '../components/about/AboutHeader.vue';
 import TeamCard from '../components/about/TeamCard.vue';
-import { team } from '../data/team'
+import { team } from '../utils/data/team'
 
 function getImageUrl(name) {
 
@@ -21,7 +21,7 @@ function getImageUrl(name) {
     <section class="container mx-auto my-28">
 
       <!-- mission -->
-      <div class="flex justify-center gap-10 items-center">
+      <div class="flex justify-center gap-10 flex-col md:flex-row items-center">
         <!-- mission -->
         <div class="w-[500px]">
           <!-- mission text -->
@@ -44,7 +44,7 @@ function getImageUrl(name) {
       </div>
 
       <!-- vision -->
-      <div class="flex justify-center gap-10 flex-row-reverse items-center">
+      <div class="flex justify-center gap-10 flex-col md:flex-row-reverse  items-center">
         <!-- Vision -->
         <div class="w-[500px]">
           <!-- Vision text -->
@@ -89,4 +89,4 @@ function getImageUrl(name) {
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped></style>

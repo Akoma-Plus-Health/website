@@ -1,0 +1,10 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vaadin:workplace" clip-path="url(#clip0_662_962)">
+<path id="Vector" d="M49.5 13.5V0H9V63H0V67.5H31.5V45H40.5V36H63V13.5H49.5ZM27 45H18V36H27V45ZM27 31.5H18V22.5H27V31.5ZM27 18H18V9H27V18ZM40.5 31.5H31.5V22.5H40.5V31.5ZM40.5 18H31.5V9H40.5V18ZM58.5 31.5H49.5V22.5H58.5V31.5ZM63 49.5H72V72H36V49.5H45V40.5H63V49.5Z" fill="#C20000"/>
+</g>
+<defs>
+<clipPath id="clip0_662_962">
+<rect width="72" height="72" fill="white"/>
+</clipPath>
+</defs>
+</svg>
