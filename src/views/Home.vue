@@ -26,7 +26,7 @@ function getImageUrl(name, ext) {
 
             <!-- did you know text -->
             <div class="my-20 max-w-3xl m-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Did you know?</h2>
+                <h2 class="sub-heading font-bold">Did you know?</h2>
             </div>
 
             <!-- did you know slider -->
@@ -40,14 +40,14 @@ function getImageUrl(name, ext) {
             <div class="container mx-auto">
                 <!-- Our services -->
                 <div class="mb-14 max-w-3xl m-auto sm:text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold">Our Services</h2>
+                    <h2 class="sub-heading font-bold">Our Services</h2>
                 </div>
 
                 <!-- Services cards -->
-                <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
+                <div class="flex gap-4 justify-center sm:justify-start lg:justify-center flex-wrap lg:flex-nowrap">
                     <template v-for="(item, index) in    serviceList" :key="index">
                         <ServiceCard :image="getImageUrl(item.icon)" :title="item.name" :description="item.desc"
-                            :url="item.url" class="sm:w-[50%] lg:w-[400px]" />
+                            :url="item.url" class="sm:w-[48%] lg:w-[400px]" />
                     </template>
                 </div>
 
@@ -68,7 +68,7 @@ function getImageUrl(name, ext) {
         <!-- Frequently asked questions -->
         <section class="container my-48 mx-auto">
             <div class="max-w-3xl m-auto sm:text-center">
-                <h1 class="text-3xl md:text-4xl text-[#590000] font-bold">Frequently Asked Questions</h1>
+                <h1 class="sub-heading text-[#590000] font-bold">Frequently Asked Questions</h1>
                 <p class="my-5 text-lg leading-7">Our FAQ area is the best place to look to find answers to your questions.
                     Our
                     community and support team constantly updates the questions and answers.

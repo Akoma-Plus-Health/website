@@ -16,4 +16,12 @@
   .button-transparent {
     @apply px-7 py-3 bg-transparent inline-block rounded-lg hover:bg-primary font-semibold text-white transition border border-white hover:border-primary;
   }
+
+  .big-heading {
+    @apply text-4xl md:text-5xl
+  }
+
+  .sub-heading {
+    @apply text-3xl md:text-4xl
+  }
 }
