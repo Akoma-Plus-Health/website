@@ -4,7 +4,6 @@ import TeamCard from '../components/about/TeamCard.vue';
 import { team } from '../utils/data/team'
 
 function getImageUrl(name) {
-
   console.log(new URL(`../assets/images/team/${name}`, import.meta.url).href)
   return new URL(`../assets/images/team/${name}`, import.meta.url).href
 }
