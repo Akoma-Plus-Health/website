@@ -13,7 +13,7 @@
                 <!-- content -->
                 <div class="">
                     <!-- title -->
-                    <h2 class="sub-heading font-bold w-96 text-[#590000] mb-8">Akoma+ Mobile App Coming Soon</h2>
+                    <h2 class="sub-heading font-bold w-96 text-[#590000] mb-8">Akoma+ Mobile App</h2>
 
                     <!-- content -->
                     <p class="">
@@ -29,7 +29,7 @@
                 <!-- google play images -->
                 <div class="">
                     <!-- coming soon -->
-                    <p class="text-2xl font-semibold text-[#860008] mb-4">Coming Soon On</p>
+                    <p class="text-2xl font-semibold text-[#860008] mb-4">Coming Soon</p>
 
                     <!-- images -->
                     <div class="flex gap-2">
