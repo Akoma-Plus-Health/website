@@ -11,7 +11,7 @@ export const serviceList = [
     icon: 'handshake.png'
   },
   {
-    name: 'Workplace',
+    name: 'Workplace Wellness',
     desc: 'We partner with businesses and organizations to screen their  workforce for heart disease and stroke risks to promote a healthier and more productive workforce.',
     icon: 'office.svg',
     url: ''

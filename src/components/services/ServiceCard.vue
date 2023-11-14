@@ -5,11 +5,12 @@ defineProps(['name', 'title', 'description', 'image', 'url'])
 </script>
 
 <template>
-    <div class="min-h-[300px] bg-white drop-shadow-xl p-8 rounded-md w-[400px] flex gap-4 justify-between flex-col">
+    <div
+        class="min-h-[300px] bg-white drop-shadow-xl xl:px-8 xl:py-8 p-5 rounded-md w-[400px] flex gap-4 justify-between flex-col">
         <!-- title and description -->
         <div>
-            <div class="w-full flex items-center gap-4 rounded-t-md text-white mb-5">
-                <img :src="image" :alt="name" class="w-14 h-14">
+            <div class="w-full flex items-center gap-2 rounded-t-md text-white mb-5">
+                <img :src="image" :alt="name" class="w-12 h-12">
                 <p class="text-gray-900 text-2xl text-center font-semibold">
                     {{ title }}
                 </p>
