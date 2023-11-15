@@ -89,16 +89,18 @@ function getImageUrl(name) {
       <div class="text-center mb-10">
         <h2 class="sub-heading font-bold mb-5">Our Collaborators </h2>
       </div>
-      <div class="py-10 container mx-auto bg-gray-200">
-        <div class="flex  flex-wrap justify-center gap-4">
-          <div class="w-[200px] h-[200px]\">
-            <img src="@/assets/images/partners/johns_hopkins_medicine_akoma_plus_partner_logo_300_x_300.png" alt="">
-          </div>
-          <div class="w-[200px] h-[200px]">
-            <img src="@/assets/images/partners/google_akoma_plus_partner_logo.png" alt="">
-          </div>
-          <div class="w-[200px] h-[200px">
-            <img src="@/assets/images/partners/fitbit_akoma_plus_partner_logo_340_x_340.png" alt="">
+      <div class="bg-gray-200">
+        <div class="py-10 container mx-auto ">
+          <div class="flex  flex-wrap justify-center gap-4">
+            <div class="w-[200px] h-[200px]\">
+              <img src="@/assets/images/partners/johns_hopkins_medicine_akoma_plus_partner_logo_300_x_300.png" alt="">
+            </div>
+            <div class="w-[200px] h-[200px]">
+              <img src="@/assets/images/partners/google_akoma_plus_partner_logo.png" alt="">
+            </div>
+            <div class="w-[200px] h-[200px">
+              <img src="@/assets/images/partners/fitbit_akoma_plus_partner_logo_340_x_340.png" alt="">
+            </div>
           </div>
         </div>
       </div>
