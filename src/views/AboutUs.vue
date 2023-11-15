@@ -4,7 +4,6 @@ import TeamCard from '../components/about/TeamCard.vue';
 import { team } from '../utils/data/team'
 
 function getImageUrl(name) {
-
   console.log(new URL(`../assets/images/team/${name}`, import.meta.url).href)
   return new URL(`../assets/images/team/${name}`, import.meta.url).href
 }
@@ -82,6 +81,27 @@ function getImageUrl(name) {
         <template v-for="(item, index) in team" :key="index">
           <TeamCard :name="item.name" :title="item.title" :image="getImageUrl(item.image)" />
         </template>
+      </div>
+    </section>
+
+    <section class="py-6 max-w-screen my-32">
+      <div class="text-center mb-10">
+        <h2 class="sub-heading font-bold mb-5">Our Collaborators </h2>
+      </div>
+      <div class="bg-gray-200">
+        <div class="py-10 container mx-auto ">
+          <div class="flex  flex-wrap justify-center gap-4">
+            <div class="w-[200px] h-[200px]\">
+              <img src="@/assets/images/partners/johns_hopkins_medicine_akoma_plus_partner_logo_300_x_300.png" alt="">
+            </div>
+            <div class="w-[200px] h-[200px]">
+              <img src="@/assets/images/partners/google_akoma_plus_partner_logo.png" alt="">
+            </div>
+            <div class="w-[200px] h-[200px">
+              <img src="@/assets/images/partners/fitbit_akoma_plus_partner_logo_340_x_340.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
