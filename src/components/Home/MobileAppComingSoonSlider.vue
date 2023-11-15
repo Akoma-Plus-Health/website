@@ -78,7 +78,7 @@ function getImageUrl(name) {
                 <!-- google play images -->
                 <div class="">
                     <!-- coming soon -->
-                    <p class="text-2xl font-semibold text-[#860008] my-4">Coming Soon On</p>
+                    <p class="text-2xl font-semibold text-[#860008] my-4">Coming Soon</p>
 
                     <!-- images -->
                     <div class="flex gap-2">
