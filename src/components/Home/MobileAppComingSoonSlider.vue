@@ -67,7 +67,7 @@ function getImageUrl(name) {
                 <!-- content -->
                 <div class="">
                     <!-- title -->
-                    <h2 class="sub-heading font-bold w-96 text-[#590000] mb-8">Akoma+ Mobile App Coming Soon</h2>
+                    <h2 class="sub-heading font-bold w-96 text-[#590000] mb-8">Akoma+ Mobile App</h2>
 
                     <!-- content -->
                     <p class="">
