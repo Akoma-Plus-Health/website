@@ -8,7 +8,7 @@ import { healthPackage } from '../utils/data/services';
 <template>
     <Pageheader />
     <main class="max-h-full">
-        <section class="container my-10 md:my-20 mx-auto">
+        <section class="container my-10 md:my-20 mx-auto" id="healthcare">
             <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
                 <div class="lg:w-1/2">
                     <img class="box-shadow rounded-lg mx-auto" src="@/assets/images/services/akoma_health_services.png"
@@ -48,7 +48,7 @@ import { healthPackage } from '../utils/data/services';
             </div>
         </section>
 
-        <section class="container my-10 md:my-20 mx-auto">
+        <section class="container my-10 md:my-20 mx-auto" id="wellness">
             <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row">
                 <div class="flex flex-col lg:w-1/2 gap-4">
                     <h2 class="font-black text-2xl md:text-3xl mb-5">Workplace Wellness</h2>
@@ -71,7 +71,7 @@ import { healthPackage } from '../utils/data/services';
             </div>
         </section>
 
-        <section class="container my-10 md:my-20 mx-auto">
+        <section class="container my-10 md:my-20 mx-auto" id="partnership">
             <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
                 <div class="lg:w-1/2">
                     <img class="box-shadow mx-auto rounded-lg"
