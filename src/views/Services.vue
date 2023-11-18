@@ -11,22 +11,21 @@ import { healthPackage } from '../utils/data/services';
         <section class="container my-10 md:my-20 mx-auto" id="healthcare">
             <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
                 <div class="lg:w-1/2">
-                    <img class="box-shadow rounded-lg mx-auto" src="@/assets/images/services/akoma_health_services.png"
+                    <img class="box-shadow rounded-lg mx-auto"
+                        src="@/assets/images/services/akoma-plus-screening-van-or-ambulance.png"
                         alt="Akoma+ health Screening">
                 </div>
                 <div class="flex flex-col lg:w-1/2 gap-4">
                     <h2 class="font-black text-2xl md:text-3xl mb-3">Health Screening</h2>
                     <p> We screen you for heart disease and stroke risks for early detection and prevention.
                         We estimate your risk of a heart attack or stroke and work to minimize this risk!. Akoma+ health
-                        screening services provide a holistic approach to heart health assessment. Our comprehensive
-                        screenings include monitoring blood pressure and assessing various risk factors, such as age, family
-                        history, and lifestyle. </p>
+                        screening services provide a holistic approach to heart health assessment. </p>
                     <span>
                         <p class="mb-2 font-bold">We screen for the following:</p>
                         <ul class="ml-4">
                             <li class="mb-2"><span class="list-donut"></span> Hypertension (High blood pressure)</li>
                             <li class="mb-2"><span class="list-donut"></span> Type 2 Diabetes</li>
-                            <li class="mb-2"><span class="list-donut"></span> Hign Cholesterol</li>
+                            <li class="mb-2"><span class="list-donut"></span> High Cholesterol</li>
                             <li class="mb-2"><span class="list-donut"></span> Obesity</li>
                             <li class="mb-2"><span class="list-donut"></span> Metabolic syndrome</li>
                             <li class="mb-2"><span class="list-donut"></span> Atrial fibrillation or irregular heartbeats.
@@ -66,7 +65,8 @@ import { healthPackage } from '../utils/data/services';
                 </div>
                 <div class="lg:w-1/2">
                     <img class="box-shadow mx-auto rounded-lg"
-                        src="@/assets/images/services/akomaplus_workplace_wellness.png" alt="Akoma+ Workplace Wellness">
+                        src="@/assets/images/services/men-at-workplace-by-akoma-plus-akomaplus.png"
+                        alt="Akoma+ Workplace Wellness">
                 </div>
             </div>
         </section>
@@ -75,7 +75,8 @@ import { healthPackage } from '../utils/data/services';
             <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
                 <div class="lg:w-1/2">
                     <img class="box-shadow mx-auto rounded-lg"
-                        src="@/assets/images/services/close-up-akoma-group-standing-circle.png" alt="Akoma+ Partnership">
+                        src="@/assets/images/services/akomaplus-doctor-and-businessman-shake-hands-to-confirm-partnership.png"
+                        alt="Akoma+ Partnership">
                 </div>
                 <div class="flex flex-col lg:w-1/2 gap-4">
                     <h2 class="font-black text-2xl md:text-3xl mb-5">Partnership</h2>

@@ -14,7 +14,7 @@ import Statistics from '../Statistics.vue';
             <div class="relative text-white max-w-4xl text-center mx-auto top-[380px]">
                 <h2 class="font-bold big-heading mb-3">About Us</h2>
 
-                <!-- content -->
+                <!-- about-page-description --
                 <p class="">
                     At <span class="text-red-500">Akoma+</span> , we're dedicated to empowering individuals to take control
                     of
@@ -24,7 +24,7 @@ import Statistics from '../Statistics.vue';
                     heart
                     stays in the best shape possible. Discover a new way to care for your heart with <span
                         class="text-red-500">Akoma+</span>.
-                </p>
+                </p> -- about-page-description -->
             </div>
 
             <!-- Statistics -->
