@@ -28,7 +28,7 @@ function getImageUrl(name) {
             <h2 class="sub-heading font-semibold mb-5">Our Mission</h2>
             <p class="">
               Using a digital health platform, we seek to provide routine and comprehensive screening for heart disease
-              and stroke risk factors in low- and middle-income countries and provide effective, efficient, and timely
+              and stroke risk factors in Africa and provide effective, efficient, as well as timely
               prevention strategies.
             </p>
           </div>
@@ -42,11 +42,11 @@ function getImageUrl(name) {
         </div>
       </div>
 
-      <!-- vision -->
+      <!-- vision --
       <div class="flex justify-center gap-10 flex-col md:flex-row-reverse  items-center">
-        <!-- Vision -->
+        -- Vision --
         <div class="md:w-[500px]">
-          <!-- Vision text -->
+          -- Vision text --
           <div class="bg-white shadow-lg p-8 py-14">
             <h2 class="sub-heading font-semibold mb-5">Our Vision</h2>
             <p class="">
@@ -57,13 +57,14 @@ function getImageUrl(name) {
           </div>
         </div>
 
-        <!-- image -->
+        -- image --
         <div class="md:w-[500px]">
           <div class="md:w-[400px] mx-auto">
             <img src="../assets/images/vision.png" alt="mission" class="w-full">
           </div>
         </div>
       </div>
+      -- vision -->
     </section>
 
     <!-- Our team -->

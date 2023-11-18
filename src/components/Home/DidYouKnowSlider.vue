@@ -7,7 +7,7 @@ const sData = [
     {
         title: "",
         description: "According to the WHO, heart disease takes an estimated 17.9 million lives worldwide each year",
-        image: "nurse.png",
+        image: "man-suffers-a-heart-attack-by-akoma-plus.jpeg",
     },
     {
         title: "",
