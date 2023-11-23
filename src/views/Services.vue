@@ -16,7 +16,7 @@ import { healthPackage } from '../utils/data/services';
                         alt="Akoma+ health Screening">
                 </div>
                 <div class="flex flex-col lg:w-1/2 gap-4">
-                    <h2 class="font-black text-2xl md:text-3xl mb-3">Health Screening</h2>
+                    <h2 class="font-black text-2xl md:text-3xl mb-3">Individual Heart Screening</h2>
                     <p> We screen you for heart disease and stroke risks for early detection and prevention.
                         We estimate your risk of a heart attack or stroke and work to minimize this risk!. Akoma+ health
                         screening services provide a holistic approach to heart health assessment. </p>

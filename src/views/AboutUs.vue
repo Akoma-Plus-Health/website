@@ -80,7 +80,7 @@ function getImageUrl(name) {
 
       <div class="team flex flex-wrap justify-center gap-5">
         <template v-for="(item, index) in team" :key="index">
-          <TeamCard :name="item.name" :title="item.title" :image="getImageUrl(item.image)" />
+          <TeamCard :name="item.name" :title="item.title" :image="getImageUrl(item.image)" :bio="item.bio" />
         </template>
       </div>
     </section>

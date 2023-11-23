@@ -1,6 +1,6 @@
 export const serviceList = [
   {
-    name: 'Health Screening',
+    name: 'Individual Heart Screening',
     desc: 'We screen you for heart disease and stroke risks for early detection and prevention. We estimate your risk of a heart attack or stroke and work to minimize this risk!',
     icon: 'heart.png',
     url: 'services/#healthcare'
@@ -21,9 +21,10 @@ export const serviceList = [
 
 export const healthPackage = [
   {
-    name: 'Free BP check',
+    name: 'Basic',
     color: 'red',
     list: [
+      'Free BP check  and Free access to educational materials',
       'Vitals Tracking',
       'Free health educational materials prepared by world-renowned experts in the field.'
     ]

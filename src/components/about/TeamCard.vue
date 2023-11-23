@@ -3,7 +3,7 @@ defineProps(['name', 'title', 'image'])
 </script>
 
 <template>
-  <div class="w-[350px] box-shadow bg-white text-center p-5 py-10">
+  <div class="group w-[350px] box-shadow bg-white text-center p-5 py-10">
     <div class="rounded-full mx-auto w-[60%]">
       <img :src="image" :alt="name" class="w-full rounded-full">
     </div>
@@ -13,6 +13,10 @@ defineProps(['name', 'title', 'image'])
     <p class="text-red-500"> {{ title }} <img src="../../assets/images/icons/linkedin.svg" alt=""
         class="inline w-4 relative bottom-[1px]">
     </p>
+
+    <!-- <p class="invisible group-hover:visible text-left">
+      {{ bio }}
+    </p> -->
   </div>
 </template>
 
