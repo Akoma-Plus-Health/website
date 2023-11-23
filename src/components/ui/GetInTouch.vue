@@ -8,7 +8,7 @@
                 have a conversation with our knowledgeable staff.</p>
             <p
                 class="hover:border-white hover:bg-primary hover:text-white my-4 border border-red-900 py-2 mx-auto w-36 lg:w-52  rounded-xl text-center  bg-white font-semibold text-red-800 md:mb-3 lg:text-lg">
-                <a href="#" class="mx-2">
+                <a href="/contact-us" class="mx-2">
                     Let's Have A Chat
                 </a>
             </p>

@@ -11,7 +11,7 @@ defineProps(['name', 'title', 'description', 'image', 'url'])
         <div>
             <div class="w-full flex items-center gap-2 rounded-t-md text-white mb-5">
                 <img :src="image" :alt="name" class="w-12 h-12">
-                <p class="text-gray-900 text-2xl text-center font-semibold">
+                <p class="text-gray-900 text-2xl text-left font-semibold">
                     {{ title }}
                 </p>
             </div>
