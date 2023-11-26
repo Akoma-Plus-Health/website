@@ -1,5 +1,4 @@
 <script setup>
-import Home from "../../views/Home.vue";
 import MobileNav from "./MobileNav.vue";
 import { ref, watch, onUnmounted } from 'vue';
 import { Bars3Icon } from '@heroicons/vue/24/outline'
@@ -36,14 +35,13 @@ onUnmounted(() => {
     <div class="nav flex  justify-between items-center container mx-auto ">
       <div class="logo w-24">
         <router-link :to="{ name: 'Home' }">
-          <img src="@/assets/images/akomaplus-logo.png" alt="litt-logo" class="w-full">
+          <img src="@/assets/images/akomaplus-logo.png" alt="Akoma+-logo" class="w-full">
         </router-link>
       </div>
       <div>
         <div class="links md:inline hidden font-semibold">
           <router-link :to="{ name: 'Home' }" class="mx-4">Home</router-link>
           <router-link :to="{ name: 'Services' }" class="mx-4">Services</router-link>
-
           <router-link :to="{ name: 'AboutUs' }" class="mx-4">About Us</router-link>
           <router-link :to="{ name: 'ContactUs' }" class="mx-4">Contact Us</router-link>
         </div>

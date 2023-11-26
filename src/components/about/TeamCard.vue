@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['name', 'title', 'image'])
+defineProps(['name', 'title', 'image', 'bio'])
 </script>
 
 <template>
@@ -14,9 +14,8 @@ defineProps(['name', 'title', 'image'])
         class="inline w-4 relative bottom-[1px]">
     </p>
 
-    <!-- <p class="invisible group-hover:visible text-left">
-      {{ bio }}
-    </p> -->
+    <!-- <p class="invisible group-hover:visible text-left"> -->
+ 
   </div>
 </template>
 

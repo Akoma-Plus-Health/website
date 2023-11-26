@@ -2,6 +2,7 @@
 import { useHead } from "@unhead/vue";
 import Navbar from "./components/layouts/Navbar.vue";
 import Footer from "./components/layouts/Footer.vue";
+import MainMenu from "./components/layouts/MainMenu.vue";
 // import med_van from "./assets/images/services/akoma-plus-screening-van-or-ambulance.png";
 
 useHead({
@@ -19,15 +20,14 @@ useHead({
 })
 </script>
 
-
 <template>
   <div class="font-body  text-sm lg:text-base">
-    <Navbar :key="$route.path" />
+    <!-- <Navbar :key="$route.path" /> -->
+    <MainMenu :key="$route.path" />
     <router-view></router-view>
     <Footer />
   </div>
 </template>
-
 <style>
 /* Custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -42,7 +42,6 @@ useHead({
   --primary-light: #8B000F;
   --primary: #571710;
 }
-
 
 /* Overiding some elements with default and replacing with custom */
 p,

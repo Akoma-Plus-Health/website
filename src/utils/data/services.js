@@ -50,6 +50,6 @@ export const healthPackage = [
   {
     name: 'Platinum',
     color: 'platinum',
-    list: ['Includes Diamond Package.', 'Concierge services.']
+    list: ['Diamond plus', 'Concierge services.']
   }
 ]

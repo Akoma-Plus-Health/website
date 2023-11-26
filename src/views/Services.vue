@@ -63,7 +63,7 @@ import { healthPackage } from '../utils/data/services';
                         and improved overall productivity. With Akoma+, you can invest in the long-term well-being of your
                         workforce, creating a healthier and more motivated team.</p>
                     <button
-                        class="text-sm tracking-wide bg-red-700 text-gray-100 p-3 rounded-lg w-[30%] focus:outline-none focus:shadow-outline">
+                        class="text-sm tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-[30%] focus:outline-none focus:shadow-outline">
                         Book Appointment
                     </button>
                 </div>
@@ -104,7 +104,7 @@ import { healthPackage } from '../utils/data/services';
                         partnering with Akoma+, health insurance providers can not only enhance the health outcomes of their
                         policyholders but also reduce healthcare costs in the long run. </p>
                     <button
-                        class="text-sm tracking-wide bg-red-700 text-gray-100 p-3 rounded-lg w-[30%] focus:outline-none focus:shadow-outline">
+                        class="text-sm tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-[30%] focus:outline-none focus:shadow-outline">
                         Book Appointment
                     </button>
                 </div>
