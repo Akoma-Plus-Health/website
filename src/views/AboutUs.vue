@@ -1,6 +1,7 @@
 <script setup>
 import AboutHeader from '../components/about/AboutHeader.vue';
-import TeamCard from '../components/about/TeamCard.vue';
+import ProfileCard from '../components/about/ProfileCard.vue';
+// import TeamCard from '../components/about/TeamCard.vue';
 import { team } from '../utils/data/team'
 
 function getImageUrl(name) {
@@ -77,12 +78,16 @@ function getImageUrl(name) {
           We are a team of world-class experts in heart disease prevention and public health.
         </p>
       </div>
-
       <div class="team flex flex-wrap justify-center gap-5">
+        <template v-for="(item, index) in team" :key="index">
+          <ProfileCard :name="item.name" :title="item.title" :image="getImageUrl(item.image)" :bio="item.bio" />
+        </template>
+      </div>
+      <!-- <div class="team flex flex-wrap justify-center gap-5">
         <template v-for="(item, index) in team" :key="index">
           <TeamCard :name="item.name" :title="item.title" :image="getImageUrl(item.image)" :bio="item.bio" />
         </template>
-      </div>
+      </div> -->
     </section>
 
     <section class="py-6 max-w-screen my-32">

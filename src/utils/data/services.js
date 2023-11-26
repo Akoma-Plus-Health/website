@@ -24,8 +24,7 @@ export const healthPackage = [
     name: 'Basic',
     color: 'red',
     list: [
-      'Free BP check  and Free access to educational materials',
-      'Vitals Tracking',
+      'Free BP check',
       'Free health educational materials prepared by world-renowned experts in the field.'
     ]
   },
@@ -33,7 +32,7 @@ export const healthPackage = [
     name: 'Gold',
     color: 'gold',
     list: [
-      ' Annual full screening for heart disease and stroke risks with cumulative risk estimation.',
+      'Annual full screening for heart disease and stroke risks with cumulative risk estimation.',
       'Recommendations on next steps',
       'Free health educational materials prepared by world-renowned experts in the field.'
     ]
@@ -42,15 +41,15 @@ export const healthPackage = [
     name: 'Diamond',
     color: 'cyan',
     list: [
-      'Includes Gold Package',
-      'Annual full screening for heart disease and stroke risks with cumulative risk estimation.',
-      'Recommendations on next steps',
-      'Free health educational materials prepared by world-renowned experts in the field.'
+      'Includes Gold, plus',
+      'Free one-on-one consultation with a healthcare provider to review results and develop a treatment pan.',
+      'Personalized lifestyle counseling including diet, exercise, and weight loss.',
+      'Prescriptions for needed medications such as blood pressure and cholesterol medications.'
     ]
   },
   {
     name: 'Platinum',
     color: 'platinum',
-    list: ['Includes Diamond Package.', 'Concierge services.']
+    list: ['Diamond plus', 'Concierge services.']
   }
 ]

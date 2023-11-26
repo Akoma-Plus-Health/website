@@ -62,6 +62,10 @@ import { healthPackage } from '../utils/data/services';
                         employees to proactively manage their health, resulting in increased morale, reduced absenteeism,
                         and improved overall productivity. With Akoma+, you can invest in the long-term well-being of your
                         workforce, creating a healthier and more motivated team.</p>
+                    <button
+                        class="text-sm tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-[30%] focus:outline-none focus:shadow-outline">
+                        Book Appointment
+                    </button>
                 </div>
                 <div class="lg:w-1/2">
                     <img class="box-shadow mx-auto rounded-lg"
@@ -99,9 +103,14 @@ import { healthPackage } from '../utils/data/services';
                         insurance providers can offer their policyholders a holistic heart health management experience. By
                         partnering with Akoma+, health insurance providers can not only enhance the health outcomes of their
                         policyholders but also reduce healthcare costs in the long run. </p>
+                    <button
+                        class="text-sm tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-[30%] focus:outline-none focus:shadow-outline">
+                        Book Appointment
+                    </button>
                 </div>
             </div>
         </section>
+        <div></div>
         <section class="my-44">
             <GetInTouch />
         </section>
