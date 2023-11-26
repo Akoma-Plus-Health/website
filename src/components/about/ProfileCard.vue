@@ -17,7 +17,8 @@ defineProps(['name', 'title', 'image', 'bio'])
             <!-- <p class="invisible group-hover:visible text-left"> -->
 
         </div>
-        <div class="bg-white box-shadow p-8 py-14 sm:w-[350px] lg:w-[720px] sm:h-[350px] overflow-x-scroll">
+        <div
+            class="bg-white box-shadow p-8 py-14 sm:w-[350px] lg:w-[720px] sm:h-[350px] sm:overflow-x-scroll overflow-x-scroll-none">
             <p>
                 {{ bio }}
             </p>
