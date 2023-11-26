@@ -3,7 +3,7 @@ defineProps(['name', 'title', 'image', 'bio'])
 </script>
 <template>
     <div class="flex flex-wrap gap-6">
-        <div class="group w-[350px] box-shadow bg-white text-center p-5 py-10">
+        <div class="group w-[350px] box-shadow bg-white h-[350px] text-center p-5 py-10">
             <div class="rounded-full mx-auto w-[60%]">
                 <img :src="image" :alt="name" class="w-full rounded-full">
             </div>
@@ -17,7 +17,7 @@ defineProps(['name', 'title', 'image', 'bio'])
             <!-- <p class="invisible group-hover:visible text-left"> -->
 
         </div>
-        <div class="bg-white box-shadow p-8 py-14 w-[720px]">
+        <div class="bg-white box-shadow p-8 py-14 sm:w-[350px] lg:w-[720px] sm:h-[350px] overflow-x-scroll">
             <p>
                 {{ bio }}
             </p>
