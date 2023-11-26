@@ -18,7 +18,7 @@ defineProps(['name', 'title', 'image', 'bio'])
 
         </div>
         <div
-            class="bg-white box-shadow p-8 py-14 sm:w-[350px] lg:w-[720px] sm:h-[350px] sm:overflow-x-scroll overflow-x-scroll-none">
+            class="bg-white box-shadow p-8 py-14 w-[350px] lg:w-[720px] md:h-[350px] h-auto no-scrollbar overflow-y-scroll">
             <p>
                 {{ bio }}
             </p>
@@ -28,5 +28,18 @@ defineProps(['name', 'title', 'image', 'bio'])
 <style scoped>
 .box-shadow {
     box-shadow: 0px 5px 20px 0px rgba(0, 15, 31, 0.05);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 </style>
