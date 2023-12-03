@@ -1,6 +1,6 @@
 <script setup>
 import ContactForm from '../components/Contact/ContactForm.vue';
-import Pageheader from '../components/contact/ContactHeader.vue';
+import Pageheader from '../components/Contact/ContactHeader.vue';
 </script>
 <template>
   <main class="bg-[#F8F8F8]">

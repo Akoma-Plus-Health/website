@@ -3,7 +3,7 @@ import Pageheader from '../components/services/ServiceHeader.vue'
 import PackageCard from '../components/ui/PackageCard.vue'
 import GetInTouch from '../components/ui/GetInTouch.vue'
 import { healthPackage } from '../utils/data/services';
-import BookingForm from '../components/services/BookingForm.vue'
+// import BookingForm from '../components/services/BookingForm.vue'
 
 export default {
     data() {
