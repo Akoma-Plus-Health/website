@@ -1,8 +1,8 @@
 <script>
-import Pageheader from '../components/services/ServiceHeader.vue'
 import PackageCard from '../components/ui/PackageCard.vue'
 import GetInTouch from '../components/ui/GetInTouch.vue'
 import { healthPackage } from '../utils/data/services';
+import ServiceHeader from '../components/services/ServiceHeader.vue';
 // import BookingForm from '../components/services/BookingForm.vue'
 
 export default {
@@ -12,7 +12,6 @@ export default {
             showModal: false
         };
     },
-
     computed: {
         isModalVisible() {
             return this.isOpen;
@@ -21,7 +20,6 @@ export default {
             return this.showModal;
         }
     },
-
     methods: {
         onToggle() {
             this.isOpen = !this.isOpen;
@@ -29,11 +27,12 @@ export default {
         Toggle() {
             this.showModal = !this.showModal;
         }
-    }
+    },
+    components: { ServiceHeader }
 };
 </script>
 <template>
-    <Pageheader />
+    <ServiceHeader />
     <main class="max-h-full">
         <section class="container my-10 md:my-20 mx-auto" id="healthcare">
             <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
