@@ -6,9 +6,9 @@ import ServiceCard from '../components/services/ServiceCard.vue'
 import GetInTouch from '../components/ui/GetInTouch.vue'
 // import FeedbackSlider from '../components/Slider.vue'
 import { serviceList } from '../utils/data/services'
-import FAQ from '../components/Home/Faqs.vue'
+import FAQ from '../components/home/Faqs.vue'
 import { Faqs } from '../utils/data/faqs'
-import MobileAppComingSoonSlider from '../components/Home/MobileAppComingSoonSlider.vue'
+import MobileAppComingSoonSlider from '../components/home/MobileAppComingSoonSlider.vue'
 // import { testimonyList } from '../utils/data/testimonies'
 
 function getImageUrl(name, ext) {
@@ -76,7 +76,7 @@ function getImageUrl(name, ext) {
             </div>
 
             <!-- faqs -->
-            <div class=" flex flex-col gap-4 max-w-6xl mx-auto mt-14">
+            <div class="flex flex-col gap-4 max-w-6xl mx-auto mt-14">
                 <template v-for="(faq, index) in Faqs" :key="index">
                     <FAQ :question="faq.question" :answer="faq.answer" />
                 </template>
