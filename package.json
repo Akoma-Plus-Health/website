@@ -10,6 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fontsource/open-sans": "^5.0.17",
     "@heroicons/vue": "^2.0.18",
     "@unhead/vue": "^1.8.2",

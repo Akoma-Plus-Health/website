@@ -2,22 +2,25 @@
 
 <template>
     <div class="header relative w-full">
-        <div class="container">
-            <div class="overlay absolute top-0 left-0 right-0 bottom-0 bg-black/50">
-                <div class="overlay"></div>
-            </div>
-            <div class="content text-white relative z-10 min-width">
-                <div class="w max-w-3xl py-40 ">
-                    <h1 class="font-bold text-6xl">How well do you know <br>
-                        your Blood Pressure?</h1>
-                    <p class="mt-12 text-lg">
-                        Do you truly understand your blood pressure? Explore <span
-                            class="text-red-500 font-bold">AKOMA+</span>
-                        for
-                        insights, tools, and <br>
-                        care that put your heart health first.
 
-                    </p>
+        <!-- overlay -->
+        <div class="overlay"></div>
+
+        <!-- header content -->
+        <div class="container mx-auto">
+
+            <div class="text-white relative z-10 py-48">
+                <!-- image -->
+                <div class="image w-64 md:w-80 ">
+                    <img src="../../assets/images/akomaplus-logo.png" alt="akoma" class="w-full">
+                </div>
+
+                <!-- text -->
+                <div class="m max-w-2xl my-5">
+                    <h1 class="font-bold big-heading">
+                        Preventing cardiac deaths through early screening.
+                    </h1>
+                    <p class="mt-5">With our medical vans, we bring screening closer to you.</p>
                 </div>
             </div>
         </div>
@@ -26,7 +29,7 @@
 
 <style scoped>
 .header {
-    background: url("@/assets/images/banner.jpg") center;
+    background: url("@/assets/images/banner-van.png") center;
     background-size: cover;
 }
 
@@ -36,6 +39,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(7, 7, 7, 0.5);
+    background: rgba(00, 00, 00, 0.7);
 }
 </style>

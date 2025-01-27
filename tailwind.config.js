@@ -1,19 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{vue,js}',
-    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}',
-    'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
-  ],
+  content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
     container: {
       padding: {
         DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem'
+        sm: '1rem',
+        lg: '2rem',
+        xl: '4rem',
+        '2xl': '5rem'
       }
     },
     extend: {
@@ -36,5 +31,10 @@ module.exports = {
       }
     }
   },
-  plugins: [require('@tailwindcss/forms', 'flowbite/plugin')]
+  variants: {
+    extend: {
+      visibility: ['group-hover']
+    }
+  },
+  plugins: [require('@tailwindcss/forms')]
 }

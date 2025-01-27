@@ -10,8 +10,10 @@
                         class="xs:py-4 xs:px-6 py-3 px-4 block bar hover:text-red-700">Home</router-link>
                     <!-- <hr class="px-6 block"> -->
                 </li>
-                <li> <router-link :to="{ name: 'Services' }" class="mx-4 hover:text-red-700">About Us</router-link></li>
-                <li> <router-link :to="{ name: 'AboutUs' }" class="mx-4 hover:text-red-700">About Us</router-link></li>
+                <li> <router-link :to="{ name: 'Services' }"
+                        class="xs:py-4 xs:px-6 py-3 px-4 block bar hover:text-red-700">Services</router-link></li>
+                <li> <router-link :to="{ name: 'AboutUs' }"
+                        class="xs:py-4 xs:px-6 py-3 px-4 block bar hover:text-red-700">About Us</router-link></li>
                 <li><router-link :to="{ name: 'ContactUs' }"
                         class="xs:py-4 xs:px-6 py-3 px-4 block hover:text-red-700">Contact
                         Us</router-link>
