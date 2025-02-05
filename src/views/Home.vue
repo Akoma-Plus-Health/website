@@ -1,14 +1,14 @@
 <script setup>
 // import { ref, onMounted, onBeforeUnmount } from 'vue'
-import HeaderBanner from '../components/home/HeaderBanner.vue'
-import DidYouKnowSlider from '../components/home/DidYouKnowSlider.vue'
+import HeaderBanner from '@/components/Home/HeaderBanner.vue'
+import DidYouKnowSlider from '@/components/Home/DidYouKnowSlider.vue'
 import ServiceCard from '../components/services/ServiceCard.vue'
 import GetInTouch from '../components/ui/GetInTouch.vue'
 // import FeedbackSlider from '../components/Slider.vue'
 import { serviceList } from '../utils/data/services'
-import FAQ from '../components/home/Faqs.vue'
+import FAQ from '@/components/Home/Faqs.vue'
 import { Faqs } from '../utils/data/faqs'
-import MobileAppComingSoonSlider from '../components/home/MobileAppComingSoonSlider.vue'
+import MobileAppComingSoonSlider from '@/components/Home/MobileAppComingSoonSlider.vue'
 // import { testimonyList } from '../utils/data/testimonies'
 
 function getImageUrl(name, ext) {

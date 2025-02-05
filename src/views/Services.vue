@@ -36,9 +36,9 @@ export default {
     <main class="max-h-full">
         <section class="container my-10 md:my-20 mx-auto" id="healthcare">
             <div class="flex gap-10 justify-center flex-wrap lg:flex-nowrap">
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 contain">
                     <img class="box-shadow rounded-lg mx-auto"
-                        src="@/assets/images/Akoma-ambulance2.jpg"
+                        src="@/assets/images/Akoma-ambulance3.jpg"
                         alt="Akoma+ health Screening">
                 </div>
                 <div class="flex flex-col lg:w-1/2 gap-4">
