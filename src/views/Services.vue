@@ -35,10 +35,10 @@ export default {
     <ServiceHeader />
     <main class="max-h-full">
         <section class="container my-10 md:my-20 mx-auto" id="healthcare">
-            <div class="flex gap-4 justify-center flex-wrap lg:flex-nowrap">
-                <div class="lg:w-1/2">
+            <div class="flex gap-10 justify-center flex-wrap lg:flex-nowrap">
+                <div class="lg:w-1/2 contain">
                     <img class="box-shadow rounded-lg mx-auto"
-                        src="@/assets/images/services/akoma-plus-screening-van-or-ambulance.png"
+                        src="@/assets/images/Akoma-ambulance3.jpg"
                         alt="Akoma+ health Screening">
                 </div>
                 <div class="flex flex-col lg:w-1/2 gap-4">

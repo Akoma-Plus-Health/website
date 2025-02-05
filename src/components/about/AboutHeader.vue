@@ -3,7 +3,7 @@ import Statistics from '../Statistics.vue';
 
 </script>
 <template>
-    <header class="bg-[url('../../assets/images/akoma_doctors.png')] bg-cover bg-center h-[700px] relative mb-52">
+    <header class="bg-[url('../../assets/images/team/Team.jpg')] bg-center md:bg-[center_bottom_80%] bg-cover h-[700px] relative mb-52 ">
 
         <!-- overlay -->
         <div class="absolute inset-0 bg-black/50"></div>

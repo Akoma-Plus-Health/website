@@ -29,8 +29,10 @@
 
 <style scoped>
 .header {
-    background: url("@/assets/images/banner-van.png") center;
+    background: url("@/assets/images/Akoma-ambulance3.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .overlay {
@@ -39,6 +41,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(00, 00, 00, 0.7);
+    background: rgba(0, 0, 0, 0.5); 
+
 }
 </style>
