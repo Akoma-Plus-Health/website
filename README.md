@@ -182,14 +182,51 @@ This generates optimized static files in the `dist/` directory.
 npm run preview
 ```
 
-### Deployment
+### Automated CI/CD with GitHub Actions
 
-The built application can be deployed to any static hosting service:
+The project includes an automated deployment pipeline configured in `.github/workflows/main.yml` that:
+
+1. **Triggers** on pushes to `main` branch
+2. **Builds** the application using Node.js 18
+3. **Creates** a deployment branch with build artifacts
+4. **Deploys** to cPanel via FTP
+
+#### Workflow Steps
+
+1. **Checkout Source Code** - Fetches all repository history
+2. **Setup Node.js** - Installs Node.js v18
+3. **Clean Installation** - Removes old dependencies and reinstalls fresh
+4. **Build Application** - Runs `npm run build` and validates output
+5. **Prepare Deployment** - Moves build files to temporary location
+6. **Create Deployment Branch** - Updates or creates `deployment` branch with build artifacts
+7. **Commit & Push** - Commits build files to deployment branch
+8. **Deploy to cPanel** - Uploads files via FTP to hosting server
+
+#### Required GitHub Secrets
+
+To enable automated deployment, configure these secrets in your repository settings:
+
+| Secret Name | Description |
+|-------------|-------------|
+| `FTP_HOST` | cPanel FTP server hostname |
+| `FTP_USERNAME` | FTP username for cPanel account |
+| `FTP_PASSWORD` | FTP password for authentication |
+| `DEPLOY_PATH` | Target directory path on server (e.g., `/public_html/`) |
+
+**Setting up secrets:**
+1. Go to repository **Settings** → **Secrets and variables** → **Actions**
+2. Click **New repository secret**
+3. Add each secret with its corresponding value
+
+#### Manual Deployment
+
+The built application can also be manually deployed to any static hosting service:
 - Netlify
 - Vercel
 - GitHub Pages
 - AWS S3 + CloudFront
 - Azure Static Web Apps
+- cPanel (via FTP/SFTP)
 
 ## 🤝 Contributing
 
