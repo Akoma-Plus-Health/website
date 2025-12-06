@@ -1,4 +1,4 @@
-name: Build and Deploy to cPanel
+name: Build and Deploy Vue 3 to cPanel
 
 on:
   push:
@@ -11,77 +11,63 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for all branches
+          fetch-depth: 1
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-
-      - name: Clean Node Modules
-        run: rm -rf node_modules package-lock.json
+          cache: npm
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build React App
+      - name: Build Vue App
         run: |
-          npm run build || exit 1 # Ensure build fails if there's an error
-          ls dist || (echo "Build output directory 'dist/' not found!" && exit 1)
-      
-      - name: Prepare Build for Deployment
-        run: |
-          if [ -d dist ] && [ "$(ls -A dist)" ]; then
-            mv dist /tmp/dist-build
-          else
-            echo "No build output available, skipping deployment"
-            exit 0
-          fi
-      
-      - name: Prepare Deployment Branch
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-          git fetch origin deployment || true
-          if git show-ref --verify --quiet refs/heads/deployment; then
-            git checkout deployment
-          else
-            git checkout -b deployment
-          fi
-          git reset --hard origin/deployment || true
-          # Clean branch: remove everything except .git and .github
-          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name '.github' -exec rm -rf {} +
-          # Copy new build files to root (safely proceed if not available)
-          if [ -d /tmp/dist-build ] && [ "$(ls -A /tmp/dist-build)" ]; then
-            cp -r /tmp/dist-build/* .
-            rm -rf /tmp/dist-build
-          else
-            echo "No build output to copy, proceeding with empty deployment"
-          fi
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          npm run build
+          test -d dist || (echo "❌ Build failed: dist not found" && exit 1)
 
-      - name: Commit and Push to Deployment
-        run: |
-          git add .
-          git commit -m "Deploy build from live branch" || echo "No changes to commit"
-          git push origin deployment --force || git push --set-upstream origin deployment --force
+      - name: Backup Current Live Site on Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          port: 22
+          script: |
+            mkdir -p ~/backups
+            if [ -d "${{ secrets.DEPLOY_PATH }}" ]; then
+              tar -czf ~/backups/site_$(date +%F_%H-%M-%S).tar.gz ${{ secrets.DEPLOY_PATH }}
+            fi
 
-      - name: Deploy to cPanel via SFTP
+      - name: Deploy Vue Build to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
+          server: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          protocol: sftp
+          port: 22
+          local-dir: dist/
           server-dir: ${{ secrets.DEPLOY_PATH }}
-          protocol: ftp
-          port: 21
           exclude: |
             **/.git*
-            **/.git*/**
+            **/.env
+            **/.htaccess
             **/node_modules/**
+
+      - name: Verify Deployment
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SFTP_SERVER }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          port: 22
+          script: |
+            ls -la ${{ secrets.DEPLOY_PATH }}
+            echo "✅ Deployment successful!"
